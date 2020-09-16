@@ -1,5 +1,11 @@
 <?php
 
+$host = 'd83299.mysql.zonevs.eu';
+$db   = 'd83299_books';
+$user  = 'd83299sa325719';
+$pass = '';
+$charset = 'utf8mb4';
+
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
