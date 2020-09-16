@@ -20,7 +20,7 @@ $book = $stmt->fetch();
  </head>
  <body>
  <h1><?php echo $book['title']?></h1>
-    <img src=<?php echo $book['cover_path']?> alt="">
+    <img src="<?php echo $book['cover_path']?>" alt="">
     <script src="assets/app.js"></script>
     <tbody>
     <table>
@@ -51,10 +51,10 @@ $book = $stmt->fetch();
     </tbody>
     <div style= "margi-top 2em,"></div>
     <span>
-    <a href="editfrom.php">muuda</a>
+    <a href="editform.php?id=<?php echo $book['id']; ?>">muuda</a>
     </span>
     <span>
-    <a href="delete.php?id=<?php echo $book['id']; ?>">kustuda</a>
+    <a href="delete.php?id=<?php echo $book['id']; ?>">kustuta</a>
     </span>
  </body>
  </html>
